@@ -1,0 +1,120 @@
+.caixa {
+    background-color: #ff976e;
+    height: 100%;
+
+
+    &-login {
+        height: 520px !important;
+        width: 500px;
+        background-color: #086975;
+        border: solid 3px #468f99;
+        border-radius: 33px;
+    }
+
+    &-form {
+        background-color: #1e7882;
+        border-radius: 20px;
+
+        button {
+            background-color: #ff7640;
+
+            strong {
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+        }
+
+        input {
+            border: solid 1px rgba(255, 255, 255, 0.513);
+            background-color: #ffffff32;
+        }
+
+        a {
+            text-decoration: underline;
+        }
+    }
+
+    &-text {
+        h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 17px;
+        }
+    }
+}
+
+.caixa-text::before {
+    position: absolute;
+    content: "";
+    background-image: url("/assets/split-icon.svg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 128px;
+    height: 78px;
+    opacity: .1;
+    top: 0px;
+    right: 60px;
+    z-index: 1;
+}
+
+.caixa-slid {
+    background-color: #ff8a5c;
+    justify-content: center;
+    align-items: center;
+
+    .carousel-container {
+        padding: 40px;
+        width: 640px;
+        height: 300px;
+        position: relative;
+        background-color: rgba(255, 255, 255, 0.156);
+        border-radius: 30px;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+    }
+
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s ease;
+        z-index: 0;
+        position: relative;
+    }
+
+    .carousel-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 400px;
+        height: 200px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        color: #333;
+        font-size: 16px;
+        font-weight: bold;
+        flex-shrink: 0;
+        margin: 0 0 0 84px;    
+    }
+
+
+}
+
+@media (max-width: 639px) {
+    .caixa-login {
+        width: 370px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 640px) {
+    .caixa-text {
+        h1 {font-size: 27px;}
+    }
+}
+.nova-classe {
+    transform: scale(1.3);
+    transition: transform 0.5s;
+}
